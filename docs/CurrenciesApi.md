@@ -1,4 +1,4 @@
-# swagger_client.CurrenciesApi
+# openfintech_sdk.CurrenciesApi
 
 All URIs are relative to *https://api.openfintech.io/v1*
 
@@ -19,12 +19,12 @@ Returns all available currencies.
 ```python
 from __future__ import print_statement
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CurrenciesApi()
+api_instance = openfintech_sdk.CurrenciesApi()
 page_number = 56 # int | Current page number. (optional)
 page_size = 56 # int | Page size.<br>*Default value: 100*  (optional)
 filter_code_iso_alpha3 = 'filter_code_iso_alpha3_example' # str | Filtering by ISO code. (optional)
@@ -81,12 +81,12 @@ Returns currency with specific ID.
 ```python
 from __future__ import print_statement
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CurrenciesApi()
+api_instance = openfintech_sdk.CurrenciesApi()
 id = 'id_example' # str | Unique ID.
 
 try: 

@@ -17,16 +17,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.industries_api import IndustriesApi
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.apis.industries_api import IndustriesApi
 
 
 class TestIndustriesApi(unittest.TestCase):
     """ IndustriesApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.industries_api.IndustriesApi()
+        self.api = openfintech_sdk.apis.industries_api.IndustriesApi()
 
     def tearDown(self):
         pass

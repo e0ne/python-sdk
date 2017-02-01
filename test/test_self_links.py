@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.self_links import SelfLinks
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.self_links import SelfLinks
 
 
 class TestSelfLinks(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestSelfLinks(unittest.TestCase):
         """
         Test SelfLinks
         """
-        model = swagger_client.models.self_links.SelfLinks()
+        model = openfintech_sdk.models.self_links.SelfLinks()
 
 
 if __name__ == '__main__':

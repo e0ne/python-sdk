@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.merchant_industry_attributes import MerchantIndustryAttributes
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.merchant_industry_attributes import MerchantIndustryAttributes
 
 
 class TestMerchantIndustryAttributes(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestMerchantIndustryAttributes(unittest.TestCase):
         """
         Test MerchantIndustryAttributes
         """
-        model = swagger_client.models.merchant_industry_attributes.MerchantIndustryAttributes()
+        model = openfintech_sdk.models.merchant_industry_attributes.MerchantIndustryAttributes()
 
 
 if __name__ == '__main__':

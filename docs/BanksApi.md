@@ -1,4 +1,4 @@
-# swagger_client.BanksApi
+# openfintech_sdk.BanksApi
 
 All URIs are relative to *https://api.openfintech.io/v1*
 
@@ -19,12 +19,12 @@ Returns all available banks
 ```python
 from __future__ import print_statement
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BanksApi()
+api_instance = openfintech_sdk.BanksApi()
 page_number = 56 # int | Current page number. (optional)
 page_size = 56 # int | Page size.<br>*Default value: 100*  (optional)
 filter_sort_code = 'filter_sort_code_example' # str | Filtering by banks code. (optional)
@@ -77,12 +77,12 @@ Returns bank with specific ID.
 ```python
 from __future__ import print_statement
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BanksApi()
+api_instance = openfintech_sdk.BanksApi()
 id = 'id_example' # str | Unique ID.
 
 try: 

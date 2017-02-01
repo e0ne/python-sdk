@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.issuer_response import IssuerResponse
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.issuer_response import IssuerResponse
 
 
 class TestIssuerResponse(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestIssuerResponse(unittest.TestCase):
         """
         Test IssuerResponse
         """
-        model = swagger_client.models.issuer_response.IssuerResponse()
+        model = openfintech_sdk.models.issuer_response.IssuerResponse()
 
 
 if __name__ == '__main__':

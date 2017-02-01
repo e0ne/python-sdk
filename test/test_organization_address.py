@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.organization_address import OrganizationAddress
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.organization_address import OrganizationAddress
 
 
 class TestOrganizationAddress(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestOrganizationAddress(unittest.TestCase):
         """
         Test OrganizationAddress
         """
-        model = swagger_client.models.organization_address.OrganizationAddress()
+        model = openfintech_sdk.models.organization_address.OrganizationAddress()
 
 
 if __name__ == '__main__':

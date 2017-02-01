@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.response_links import ResponseLinks
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.response_links import ResponseLinks
 
 
 class TestResponseLinks(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestResponseLinks(unittest.TestCase):
         """
         Test ResponseLinks
         """
-        model = swagger_client.models.response_links.ResponseLinks()
+        model = openfintech_sdk.models.response_links.ResponseLinks()
 
 
 if __name__ == '__main__':

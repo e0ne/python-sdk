@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.organization_hq_links import OrganizationHqLinks
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.organization_hq_links import OrganizationHqLinks
 
 
 class TestOrganizationHqLinks(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestOrganizationHqLinks(unittest.TestCase):
         """
         Test OrganizationHqLinks
         """
-        model = swagger_client.models.organization_hq_links.OrganizationHqLinks()
+        model = openfintech_sdk.models.organization_hq_links.OrganizationHqLinks()
 
 
 if __name__ == '__main__':

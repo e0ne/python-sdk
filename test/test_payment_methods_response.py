@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.payment_methods_response import PaymentMethodsResponse
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.payment_methods_response import PaymentMethodsResponse
 
 
 class TestPaymentMethodsResponse(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestPaymentMethodsResponse(unittest.TestCase):
         """
         Test PaymentMethodsResponse
         """
-        model = swagger_client.models.payment_methods_response.PaymentMethodsResponse()
+        model = openfintech_sdk.models.payment_methods_response.PaymentMethodsResponse()
 
 
 if __name__ == '__main__':

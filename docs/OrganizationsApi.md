@@ -1,4 +1,4 @@
-# swagger_client.OrganizationsApi
+# openfintech_sdk.OrganizationsApi
 
 All URIs are relative to *https://api.openfintech.io/v1*
 
@@ -19,12 +19,12 @@ Returns all available organizations.
 ```python
 from __future__ import print_statement
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationsApi()
+api_instance = openfintech_sdk.OrganizationsApi()
 page_number = 56 # int | Current page number. (optional)
 page_size = 56 # int | Page size.<br>*Default value: 100*  (optional)
 filter_name = 'filter_name_example' # str | Filtering by name. (optional)
@@ -79,12 +79,12 @@ Returns organization with specific ID.
 ```python
 from __future__ import print_statement
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationsApi()
+api_instance = openfintech_sdk.OrganizationsApi()
 id = 'id_example' # str | Unique ID.
 
 try: 

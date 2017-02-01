@@ -17,16 +17,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.exchangers_api import ExchangersApi
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.apis.exchangers_api import ExchangersApi
 
 
 class TestExchangersApi(unittest.TestCase):
     """ ExchangersApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.exchangers_api.ExchangersApi()
+        self.api = openfintech_sdk.apis.exchangers_api.ExchangersApi()
 
     def tearDown(self):
         pass

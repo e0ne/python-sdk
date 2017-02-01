@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.response_meta import ResponseMeta
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.response_meta import ResponseMeta
 
 
 class TestResponseMeta(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestResponseMeta(unittest.TestCase):
         """
         Test ResponseMeta
         """
-        model = swagger_client.models.response_meta.ResponseMeta()
+        model = openfintech_sdk.models.response_meta.ResponseMeta()
 
 
 if __name__ == '__main__':

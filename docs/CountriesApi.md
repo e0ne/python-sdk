@@ -1,4 +1,4 @@
-# swagger_client.CountriesApi
+# openfintech_sdk.CountriesApi
 
 All URIs are relative to *https://api.openfintech.io/v1*
 
@@ -19,12 +19,12 @@ Returns all available countries.
 ```python
 from __future__ import print_statement
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CountriesApi()
+api_instance = openfintech_sdk.CountriesApi()
 page_number = 56 # int | Current page number. (optional)
 page_size = 56 # int | Page size.<br>*Default value: 100*  (optional)
 filter_region = ['filter_region_example'] # list[str] | Filtration by region. (optional)
@@ -75,12 +75,12 @@ Returns country with specific ID.
 ```python
 from __future__ import print_statement
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CountriesApi()
+api_instance = openfintech_sdk.CountriesApi()
 id = 'id_example' # str | Unique ID.
 
 try: 

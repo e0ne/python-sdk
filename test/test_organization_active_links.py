@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.organization_active_links import OrganizationActiveLinks
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.organization_active_links import OrganizationActiveLinks
 
 
 class TestOrganizationActiveLinks(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestOrganizationActiveLinks(unittest.TestCase):
         """
         Test OrganizationActiveLinks
         """
-        model = swagger_client.models.organization_active_links.OrganizationActiveLinks()
+        model = openfintech_sdk.models.organization_active_links.OrganizationActiveLinks()
 
 
 if __name__ == '__main__':

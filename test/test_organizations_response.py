@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.organizations_response import OrganizationsResponse
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.organizations_response import OrganizationsResponse
 
 
 class TestOrganizationsResponse(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestOrganizationsResponse(unittest.TestCase):
         """
         Test OrganizationsResponse
         """
-        model = swagger_client.models.organizations_response.OrganizationsResponse()
+        model = openfintech_sdk.models.organizations_response.OrganizationsResponse()
 
 
 if __name__ == '__main__':

@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.payment_provider_attributes import PaymentProviderAttributes
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.payment_provider_attributes import PaymentProviderAttributes
 
 
 class TestPaymentProviderAttributes(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestPaymentProviderAttributes(unittest.TestCase):
         """
         Test PaymentProviderAttributes
         """
-        model = swagger_client.models.payment_provider_attributes.PaymentProviderAttributes()
+        model = openfintech_sdk.models.payment_provider_attributes.PaymentProviderAttributes()
 
 
 if __name__ == '__main__':

@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.payment_method_processor import PaymentMethodProcessor
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.payment_method_processor import PaymentMethodProcessor
 
 
 class TestPaymentMethodProcessor(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestPaymentMethodProcessor(unittest.TestCase):
         """
         Test PaymentMethodProcessor
         """
-        model = swagger_client.models.payment_method_processor.PaymentMethodProcessor()
+        model = openfintech_sdk.models.payment_method_processor.PaymentMethodProcessor()
 
 
 if __name__ == '__main__':
