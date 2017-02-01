@@ -1,0 +1,14 @@
+# Currency
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**type** | **str** |  | [optional] 
+**id** | **str** | Currency ID | [optional] 
+**attributes** | [**CurrencyAttributes**](CurrencyAttributes.md) |  | [optional] 
+**relationships** | [**CurrencyRelationships**](CurrencyRelationships.md) |  | [optional] 
+**links** | [**SelfLinks**](SelfLinks.md) |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
