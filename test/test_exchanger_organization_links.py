@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.exchanger_organization_links import ExchangerOrganizationLinks
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.exchanger_organization_links import ExchangerOrganizationLinks
 
 
 class TestExchangerOrganizationLinks(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestExchangerOrganizationLinks(unittest.TestCase):
         """
         Test ExchangerOrganizationLinks
         """
-        model = swagger_client.models.exchanger_organization_links.ExchangerOrganizationLinks()
+        model = openfintech_sdk.models.exchanger_organization_links.ExchangerOrganizationLinks()
 
 
 if __name__ == '__main__':

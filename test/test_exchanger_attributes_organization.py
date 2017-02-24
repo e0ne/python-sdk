@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.exchanger_attributes_organization import ExchangerAttributesOrganization
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.exchanger_attributes_organization import ExchangerAttributesOrganization
 
 
 class TestExchangerAttributesOrganization(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestExchangerAttributesOrganization(unittest.TestCase):
         """
         Test ExchangerAttributesOrganization
         """
-        model = swagger_client.models.exchanger_attributes_organization.ExchangerAttributesOrganization()
+        model = openfintech_sdk.models.exchanger_attributes_organization.ExchangerAttributesOrganization()
 
 
 if __name__ == '__main__':
