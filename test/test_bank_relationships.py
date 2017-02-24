@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.bank_relationships import BankRelationships
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.bank_relationships import BankRelationships
 
 
 class TestBankRelationships(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestBankRelationships(unittest.TestCase):
         """
         Test BankRelationships
         """
-        model = swagger_client.models.bank_relationships.BankRelationships()
+        model = openfintech_sdk.models.bank_relationships.BankRelationships()
 
 
 if __name__ == '__main__':

@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.bank_attributes import BankAttributes
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.bank_attributes import BankAttributes
 
 
 class TestBankAttributes(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestBankAttributes(unittest.TestCase):
         """
         Test BankAttributes
         """
-        model = swagger_client.models.bank_attributes.BankAttributes()
+        model = openfintech_sdk.models.bank_attributes.BankAttributes()
 
 
 if __name__ == '__main__':

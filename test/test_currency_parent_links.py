@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.currency_parent_links import CurrencyParentLinks
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.currency_parent_links import CurrencyParentLinks
 
 
 class TestCurrencyParentLinks(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestCurrencyParentLinks(unittest.TestCase):
         """
         Test CurrencyParentLinks
         """
-        model = swagger_client.models.currency_parent_links.CurrencyParentLinks()
+        model = openfintech_sdk.models.currency_parent_links.CurrencyParentLinks()
 
 
 if __name__ == '__main__':

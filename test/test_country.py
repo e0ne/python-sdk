@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.country import Country
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.country import Country
 
 
 class TestCountry(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestCountry(unittest.TestCase):
         """
         Test Country
         """
-        model = swagger_client.models.country.Country()
+        model = openfintech_sdk.models.country.Country()
 
 
 if __name__ == '__main__':

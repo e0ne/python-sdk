@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.industry_attributes import IndustryAttributes
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.industry_attributes import IndustryAttributes
 
 
 class TestIndustryAttributes(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestIndustryAttributes(unittest.TestCase):
         """
         Test IndustryAttributes
         """
-        model = swagger_client.models.industry_attributes.IndustryAttributes()
+        model = openfintech_sdk.models.industry_attributes.IndustryAttributes()
 
 
 if __name__ == '__main__':

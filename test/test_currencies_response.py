@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.currencies_response import CurrenciesResponse
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.currencies_response import CurrenciesResponse
 
 
 class TestCurrenciesResponse(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestCurrenciesResponse(unittest.TestCase):
         """
         Test CurrenciesResponse
         """
-        model = swagger_client.models.currencies_response.CurrenciesResponse()
+        model = openfintech_sdk.models.currencies_response.CurrenciesResponse()
 
 
 if __name__ == '__main__':

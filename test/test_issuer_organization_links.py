@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.issuer_organization_links import IssuerOrganizationLinks
+import openfintech_sdk
+from openfintech_sdk.rest import ApiException
+from openfintech_sdk.models.issuer_organization_links import IssuerOrganizationLinks
 
 
 class TestIssuerOrganizationLinks(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestIssuerOrganizationLinks(unittest.TestCase):
         """
         Test IssuerOrganizationLinks
         """
-        model = swagger_client.models.issuer_organization_links.IssuerOrganizationLinks()
+        model = openfintech_sdk.models.issuer_organization_links.IssuerOrganizationLinks()
 
 
 if __name__ == '__main__':
