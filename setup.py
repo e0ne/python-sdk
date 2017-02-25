@@ -11,8 +11,7 @@
 """
 
 
-impoer os
-import sys
+import os
 from setuptools import setup, find_packages
 
 NAME = "openfintech_sdk"
