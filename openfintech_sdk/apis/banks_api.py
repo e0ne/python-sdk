@@ -148,8 +148,9 @@ class BanksApi(object):
             del header_params['Accept']
 
         # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
+        content_type = self.api_client.select_header_content_type([])
+        if content_type:
+            header_params['Content-Type'] = content_type
 
         # Authentication setting
         auth_settings = []
