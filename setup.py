@@ -11,6 +11,7 @@
 """
 
 
+impoer os
 import sys
 from setuptools import setup, find_packages
 
@@ -23,7 +24,10 @@ VERSION = "1.0.0"
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
 
-REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil"]
+with open('requirements.txt', 'rb') as f:
+    requirements = f.readlines()
+
+REQUIRES = [r.replace(os.linesep, '') for r in requirements]
 
 setup(
     name=NAME,
