@@ -130,22 +130,10 @@ class ExchangersApi(object):
             query_params['sort'] = params['sort']
             collection_formats['sort'] = 'csv'
 
-        header_params = {}
-
         form_params = []
         local_var_files = {}
 
         body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/vnd.api+json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
 
         # Authentication setting
         auth_settings = []
@@ -153,7 +141,6 @@ class ExchangersApi(object):
         return self.api_client.call_api(resource_path, 'GET',
                                         path_params,
                                         query_params,
-                                        header_params,
                                         body=body_params,
                                         post_params=form_params,
                                         files=local_var_files,
@@ -230,7 +217,6 @@ class ExchangersApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `exchangers_id_get`")
 
-
         collection_formats = {}
 
         resource_path = '/exchangers/{id}'.replace('{format}', 'json')
@@ -240,22 +226,10 @@ class ExchangersApi(object):
 
         query_params = {}
 
-        header_params = {}
-
         form_params = []
         local_var_files = {}
 
         body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/vnd.api+json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
 
         # Authentication setting
         auth_settings = []
@@ -263,7 +237,6 @@ class ExchangersApi(object):
         return self.api_client.call_api(resource_path, 'GET',
                                         path_params,
                                         query_params,
-                                        header_params,
                                         body=body_params,
                                         post_params=form_params,
                                         files=local_var_files,

@@ -116,22 +116,10 @@ class IndustriesApi(object):
         if 'page_size' in params:
             query_params['page[size]'] = params['page_size']
 
-        header_params = {}
-
         form_params = []
         local_var_files = {}
 
         body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/vnd.api+json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
 
         # Authentication setting
         auth_settings = []
@@ -139,7 +127,6 @@ class IndustriesApi(object):
         return self.api_client.call_api(resource_path, 'GET',
                                         path_params,
                                         query_params,
-                                        header_params,
                                         body=body_params,
                                         post_params=form_params,
                                         files=local_var_files,
@@ -226,22 +213,10 @@ class IndustriesApi(object):
 
         query_params = {}
 
-        header_params = {}
-
         form_params = []
         local_var_files = {}
 
         body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/vnd.api+json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
 
         # Authentication setting
         auth_settings = []
@@ -249,7 +224,6 @@ class IndustriesApi(object):
         return self.api_client.call_api(resource_path, 'GET',
                                         path_params,
                                         query_params,
-                                        header_params,
                                         body=body_params,
                                         post_params=form_params,
                                         files=local_var_files,
